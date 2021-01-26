@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from './pages/Home'
+import Error404 from './pages/Error404'
 
 Vue.use(VueRouter)
 
@@ -13,7 +14,7 @@ const routes = [
     },
     {
         path: '*',
-        component: Home,
+        component: Error404,
     },
 ]
 
